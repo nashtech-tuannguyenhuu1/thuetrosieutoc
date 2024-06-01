@@ -17,9 +17,9 @@ function NavigationBar() {
       setPage("apartments")
     } else if (location.pathname.startsWith('/houses')) {
       setPage("houses")
-    } else if (location.pathname.startsWith('/flats')) {
-      setPage("flats")
-    } else if (location.pathname.startsWith('/roomate')) {
+    } else if (location.pathname.startsWith('/lands')) {
+      setPage("lands")
+    } else if (location.pathname.startsWith('/roomates')) {
       setPage("roomates")
     } else if (location.pathname.startsWith('/posts')) {
       setPage("posts")

@@ -22,3 +22,11 @@
   margin: auto;
   color: black;
 }
+
+.img-border-radius-5 {
+  border-radius: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}

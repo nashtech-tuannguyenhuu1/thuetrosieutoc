@@ -1,23 +1,42 @@
 import React from 'react';
-import {Col, Row} from 'react-bootstrap';
-import HotArea from '../../components/ui/page/HotArea';
+import {Col, Dropdown, FormControl, Row} from 'react-bootstrap';
 import HN from '../../assets//images/HN.jpg';
 import '../../assets/css/RoomList.css'
 import PaginationArea from '../../components/ui/page/PaginationArea';
 
-function RoomList() {
+function Posts() {
   return (
     <div style={{margin: 'auto', padding: '30px 30px 100px'}}>
       <Row>
         <Col xs={12}>
-          <h3>RENT CHEAP ROOMS, HOUSES, APARTMENTS, COMMERCIAL SPACES</h3>
-          <p>Top Affordable Rentals in Vietnam: Boarding Rooms, Houses, Apartments, and Commercial Spaces - Quickly updated, accurate, and verified rental information.</p>
+          <h3>Manage Posts</h3>
         </Col>
       </Row>
-      <HotArea></HotArea>
+      <Row>
+        <Col xs={12}>
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-status">
+              --All--
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Processing</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Rejected</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Approved</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12}>
+          <FormControl
+              type="text"
+              style={{marginTop: '10px', borderColor: 'gray'}}
+          />
+        </Col>
+      </Row>
       <Row className='row-area'>
         <Col xs={12}>
-          <h4>Found 1000 Rooms rental listings</h4>
+          <h4>Found 1000 Posts</h4>
         </Col>
       </Row>
       <Row className='row-detail'>
@@ -35,7 +54,7 @@ function RoomList() {
               <i class="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i class="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -55,7 +74,7 @@ function RoomList() {
               <i class="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i class="pi pi-times"></i> Rejected
             </Col>
           </Row>
         </Col>
@@ -75,7 +94,7 @@ function RoomList() {
               <i class="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i class="pi pi-spinner"></i> Processings
             </Col>
           </Row>
         </Col>
@@ -95,7 +114,7 @@ function RoomList() {
               <i class="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i class="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -115,7 +134,7 @@ function RoomList() {
               <i class="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i class="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -135,7 +154,7 @@ function RoomList() {
               <i class="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i class="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -149,4 +168,4 @@ function RoomList() {
   );
 }
 
-export default RoomList;
+export default Posts;

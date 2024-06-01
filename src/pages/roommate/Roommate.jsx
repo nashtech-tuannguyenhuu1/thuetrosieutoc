@@ -5,7 +5,7 @@ import HN from '../../assets//images/HN.jpg';
 import '../../assets/css/RoomList.css'
 import PaginationArea from '../../components/ui/page/PaginationArea';
 
-function RoomList() {
+function Roommate() {
   return (
     <div style={{margin: 'auto', padding: '30px 30px 100px'}}>
       <Row>
@@ -17,7 +17,7 @@ function RoomList() {
       <HotArea></HotArea>
       <Row className='row-area'>
         <Col xs={12}>
-          <h4>Found 1000 Rooms rental listings</h4>
+          <h4>Found 1000 Find Roommates listings</h4>
         </Col>
       </Row>
       <Row className='row-detail'>
@@ -25,7 +25,7 @@ function RoomList() {
           <img src={HN} alt='thuetrosieutoc' height={200} width={200} className='img-border-radius-5'></img>
         </Col>
         <Col md={9}>
-          <h3>Cho thuê phòng trọ A, tại đường B, phường An Hải tây...</h3>
+          <h3>Tìm người ở ghép, tại đường B, phường An Hải tây...</h3>
           <p>1.2 Triệu/Tháng</p>
           <p>Diện tích: 20 m2</p>
           <p>Hải Châu, Đà Nẵng</p>
@@ -45,7 +45,7 @@ function RoomList() {
           <img src={HN} alt='thuetrosieutoc' height={200} width={200} className='img-border-radius-5'></img>
         </Col>
         <Col md={9}>
-          <h3>Cho thuê phòng trọ A, tại đường B, phường An Hải tây...</h3>
+          <h3>Tìm người ở ghép, tại đường B, phường An Hải tây...</h3>
           <p>1.2 Triệu/Tháng</p>
           <p>Diện tích: 20 m2</p>
           <p>Hải Châu, Đà Nẵng</p>
@@ -65,7 +65,7 @@ function RoomList() {
           <img src={HN} alt='thuetrosieutoc' height={200} width={200} className='img-border-radius-5'></img>
         </Col>
         <Col md={9}>
-          <h3>Cho thuê phòng trọ A, tại đường B, phường An Hải tây...</h3>
+          <h3>Tìm người ở ghép, tại đường B, phường An Hải tây...</h3>
           <p>1.2 Triệu/Tháng</p>
           <p>Diện tích: 20 m2</p>
           <p>Hải Châu, Đà Nẵng</p>
@@ -85,7 +85,7 @@ function RoomList() {
           <img src={HN} alt='thuetrosieutoc' height={200} width={200} className='img-border-radius-5'></img>
         </Col>
         <Col md={9}>
-          <h3>Cho thuê phòng trọ A, tại đường B, phường An Hải tây...</h3>
+          <h3>Tìm người ở ghép, tại đường B, phường An Hải tây...</h3>
           <p>1.2 Triệu/Tháng</p>
           <p>Diện tích: 20 m2</p>
           <p>Hải Châu, Đà Nẵng</p>
@@ -105,7 +105,7 @@ function RoomList() {
           <img src={HN} alt='thuetrosieutoc' height={200} width={200} className='img-border-radius-5'></img>
         </Col>
         <Col md={9}>
-          <h3>Cho thuê phòng trọ A, tại đường B, phường An Hải tây...</h3>
+          <h3>Tìm người ở ghép, tại đường B, phường An Hải tây...</h3>
           <p>1.2 Triệu/Tháng</p>
           <p>Diện tích: 20 m2</p>
           <p>Hải Châu, Đà Nẵng</p>
@@ -125,7 +125,7 @@ function RoomList() {
           <img src={HN} alt='thuetrosieutoc' height={200} width={200} className='img-border-radius-5'></img>
         </Col>
         <Col md={9}>
-          <h3>Cho thuê phòng trọ A, tại đường B, phường An Hải tây...</h3>
+          <h3>Tìm người ở ghép, tại đường B, phường An Hải tây...</h3>
           <p>1.2 Triệu/Tháng</p>
           <p>Diện tích: 20 m2</p>
           <p>Hải Châu, Đà Nẵng</p>
@@ -149,4 +149,4 @@ function RoomList() {
   );
 }
 
-export default RoomList;
+export default Roommate;
