@@ -1,0 +1,24 @@
+.app-header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 5px 0;
+}
+
+.app-header > div:nth-child(1) {
+  text-align: left;
+}
+
+.user-name {
+  display: inline;
+  font-size: large;
+}
+
+.user-img {
+  border-radius: 50%;
+}
+
+.user-area {
+  text-align: right;
+  margin: auto;
+  color: black;
+}

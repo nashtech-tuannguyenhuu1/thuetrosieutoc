@@ -1,0 +1,19 @@
+.nav-area {
+  background-color: #05442f;
+}
+
+.nav {
+  color: white;
+}
+
+.nav > .nav-item > a {
+  color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #ed384a !important;
+}
+
+.nav-pills .nav-link {
+  border-radius: unset !important;
+}
