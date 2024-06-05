@@ -17,7 +17,7 @@ function House() {
       <HotArea></HotArea>
       <Row className='row-area'>
         <Col xs={12}>
-          <h4>Found 1000 Houses rental listings</h4>
+          <h4>Found 1000 Houses rental lists</h4>
         </Col>
       </Row>
       <Row className='row-detail'>

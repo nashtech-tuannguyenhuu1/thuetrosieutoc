@@ -17,3 +17,11 @@
 .pi-sun-inactive {
   color: red;
 }
+
+.error-input {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+}

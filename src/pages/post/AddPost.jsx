@@ -1,8 +1,6 @@
 import React from 'react';
 import {Col, Dropdown, FormControl, Row} from 'react-bootstrap';
-import HN from '../../assets//images/HN.jpg';
 import '../../assets/css/RoomList.css'
-import PaginationArea from '../../components/ui/page/PaginationArea';
 import { Label } from 'reactstrap';
 
 function AddPost() {

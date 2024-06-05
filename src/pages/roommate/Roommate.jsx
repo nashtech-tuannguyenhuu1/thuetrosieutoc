@@ -17,7 +17,7 @@ function Roommate() {
       <HotArea></HotArea>
       <Row className='row-area'>
         <Col xs={12}>
-          <h4>Found 1000 Find Roommates listings</h4>
+          <h4>Found 1000 Find Roommates lists</h4>
         </Col>
       </Row>
       <Row className='row-detail'>

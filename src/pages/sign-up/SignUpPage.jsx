@@ -5,7 +5,7 @@ import SignUpForm from '../../components/form/SignUpForm';
 
 function SignUpPage() {
   return (
-    <div style={{width: '600px', margin: 'auto', padding: '30px 30px 100px'}}>
+    <div style={{margin: 'auto', padding: '30px 30px 100px'}}>
       <h1 className="mt-5">Sign-Up Page</h1>
       <SignUpForm></SignUpForm>
       <div style={{marginTop: '20px'}}>

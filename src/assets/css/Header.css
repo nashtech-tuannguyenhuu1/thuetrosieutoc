@@ -30,3 +30,33 @@
 .mr-5 {
   margin-right: 5px;
 }
+
+.user-dropdown {
+  display: inline;
+  position: absolute;
+  border: 1px solid;
+  left: 0;
+  top: 30px;
+  background-color: white;
+  text-align: left;
+  z-index: 1;
+}
+
+.user-dropdown div {
+  border-bottom: 1px solid;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.user-dropdown div:hover {
+  background-color: rgb(238, 240, 240);
+}
+
+.user-dropdown div:last-child {
+  border-bottom: none;
+}
+
+.app-header button {
+  padding: 2px 3px;
+  vertical-align: bottom;
+}
