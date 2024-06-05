@@ -51,8 +51,8 @@ function AppHeader(props) {
   return (
     <header className='app-header'>
        <Row>
-        <Col xs={5} md={6}><img src={thueTroSieuToc} alt='thuetrosieutoc' height={50} width={100} className='img-border-radius-5'></img></Col>
-        <Col xs={7} md={6} className="user-area">
+        <Col xs={4} md={6}><img src={thueTroSieuToc} alt='thuetrosieutoc' height={50} width={100} className='img-border-radius-5'></img></Col>
+        <Col xs={8} md={6} className="user-area">
           {!showLogonIcon 
               && (<><Link to="/sign-in"><Button className='btn btn-info mr-5' ><i class="pi pi-sign-in"></i> Sign-in</Button></Link>
                   <Link to="/sign-up"><Button className='btn btn-info mr-5'><i class="pi pi-user-plus"></i> Sign-up</Button></Link>
