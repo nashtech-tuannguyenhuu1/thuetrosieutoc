@@ -25,3 +25,10 @@
 .error-text {
   color: red;
 }
+
+#main {
+  min-height: 600px;
+  background-color: rgb(247 247 247);
+  border: 1px solid #dedede;
+  border-bottom: none;
+}

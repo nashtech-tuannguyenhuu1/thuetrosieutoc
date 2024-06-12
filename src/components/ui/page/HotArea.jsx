@@ -3,7 +3,8 @@ import HCM from '../../../assets/images/hcm.jpg';
 import HN from '../../../assets/images/HN.jpg';
 import DN from '../../../assets/images/DN.jpg';
 
-function HotArea() {
+function HotArea(props) {
+
   return (
     <>
       <Row>

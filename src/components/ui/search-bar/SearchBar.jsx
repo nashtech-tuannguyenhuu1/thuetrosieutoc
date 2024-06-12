@@ -1,12 +1,54 @@
 import {React, useEffect, useState} from 'react';
 import {Button, Col, Dropdown, FormControl, InputGroup, Row} from 'react-bootstrap';
 import '../../../assets/css/SearchBar.css'
-import { useLocation } from 'react-router-dom';
+import {useLocation, useNavigate} from 'react-router-dom';
 
-function SearchBar() {
-
+function SearchBar(props) {
+  
+  const navigate = useNavigate();
   const location = useLocation();
   const [showSearchBar, setShowSearchBar] = useState(true);
+
+  const roomTypes = [
+    { label: 'Rooms', value: 'rooms' },
+    { label: 'Lands', value: 'lands' },
+    { label: 'Apartments', value: 'apartments' },
+    { label: 'Houses', value: 'houses' },
+    { label: 'Find Roommates', value: 'roommates' }
+  ];
+
+  const cities = [
+    { label: 'Đà Nẵng', value: 'danang' },
+    { label: 'Hà Nội', value: 'hanoi' },
+    { label: 'Hồ Chí Minh', value: 'hochiminh' },
+    { label: 'An Giang', value: 'angiang' }
+  ];
+
+  const rentTypes = [
+    { label: 'For Rent', value: 'rent' },
+    { label: 'Buy', value: 'buy' }
+  ];
+
+  const priceRanges = [
+    { label: '0 - 2 Million', value: '0-2' },
+    { label: '2 - 4 Million', value: '2-4' },
+    { label: '4 - 6 Million', value: '4-6' },
+    { label: 'Over 6 Million', value: '6+' }
+  ];
+
+  const areaRanges = [
+    { label: '0 - 20 m2', value: '0-20' },
+    { label: '20 - 40 m2', value: '20-40' },
+    { label: '40 - 60 m2', value: '40-60' },
+    { label: 'Over 60 m2', value: '60+' }
+  ];
+  
+  const [searchValue, setSearchValue] = useState('');
+  const [selectedRoomType, setSelectedRoomType] = useState(roomTypes[0]);
+  const [selectedCity, setSelectedCity] = useState(cities[0]);
+  const [selectedRentType, setSelectedRentType] = useState(rentTypes[0]);
+  const [selectedPriceRange, setSelectedPriceRange] = useState(priceRanges[0]);
+  const [selectedAreaRange, setSelectedAreaRange] = useState(areaRanges[0]);
 
   useEffect(() => {
     if(location.pathname === '/sign-in' || location.pathname === '/sign-up'
@@ -17,60 +59,110 @@ function SearchBar() {
     }
   }, [location.pathname]);
 
+  const handleSearch = () => {
+    const params = new URLSearchParams();
+    params.append('value', searchValue);
+    params.append('roomType', selectedRoomType.value);
+    params.append('city', selectedCity.value);
+    params.append('rentType', selectedRentType.value);
+    params.append('price', selectedPriceRange.value);
+    params.append('area', selectedAreaRange.value);
+    const url = `rooms?${params.toString()}`;
+    props.onSearch()
+    navigate(url)
+  };
+
+  const handleRoomTypeSelect = (value) => {
+    setSelectedRoomType(value);
+  };
+
+    const handleCitySelect = (item) => {
+    setSelectedCity(item);
+  };
+
+  const handleRentTypeSelect = (item) => {
+    setSelectedRentType(item);
+  };
+
+  const handlePriceRangeSelect = (item) => {
+    setSelectedPriceRange(item);
+  };
+
+  const handleAreaRangeSelect = (item) => {
+    setSelectedAreaRange(item);
+  };
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
   return (
-    showSearchBar && (<div style={{marginTop: '15px', border: '1px solid rgb(222, 222, 222)', padding: '5px', borderRadius: '5px', backgroundColor: 'rgb(247 247 247)'}}>
+    showSearchBar
+     && (<div id='area-search'>
       <Row>
         <Col xs={12} md={8}>
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-rented-room">
-              Rooms
+            <Dropdown.Toggle variant="success" id="dropdown-room-type">
+              {selectedRoomType.label}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Lands</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Apartments</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Houses</Dropdown.Item>
+              {roomTypes.map((item, index) => (
+                <Dropdown.Item key={index} onClick={() => handleRoomTypeSelect(item)}>
+                  {item.label}
+                </Dropdown.Item>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
 
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-rented-room">
-              Đà Nẵng
+            <Dropdown.Toggle variant="success" id="dropdown-city">
+              {selectedCity.label}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Hà Nội</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Hồ Chí Minh</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">An Giang</Dropdown.Item>
+              {cities.map((item, index) => (
+                <Dropdown.Item key={index} onClick={() => handleCitySelect(item)}>
+                  {item.label}
+                </Dropdown.Item>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
 
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-rented-room">
-              For Rent
+            <Dropdown.Toggle variant="success" id="dropdown-rent-type">
+            {selectedRentType.label}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Buy</Dropdown.Item>
+              {rentTypes.map((item, index) => (
+                <Dropdown.Item key={index} onClick={() => handleRentTypeSelect(item)}>
+                  {item.label}
+                </Dropdown.Item>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
 
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-rented-room">
-              0 - 2 Million
+            <Dropdown.Toggle variant="success" id="dropdown-price-range">
+              {selectedPriceRange.label}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">2 - 4 Million</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">4 - 6 Million</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Trên 6 Million</Dropdown.Item>
+             {priceRanges.map((item, index) => (
+                <Dropdown.Item key={index} onClick={() => handlePriceRangeSelect(item)}>
+                  {item.label}
+                </Dropdown.Item>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
 
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-rented-room">
-              0 - 20 m2
+            <Dropdown.Toggle variant="success" id="dropdown-area-range">
+              {selectedAreaRange.label}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">20 - 40 m2</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">40 - 60 m2</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Trên 60 m2</Dropdown.Item>
+              {priceRanges.map((item, index) => (
+                <Dropdown.Item key={index} onClick={() => handleAreaRangeSelect(item)}>
+                  {item.label}
+                </Dropdown.Item>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
         </Col>
@@ -78,8 +170,10 @@ function SearchBar() {
           <InputGroup>
             <FormControl
               type="text"
+              value={searchValue}
+              onChange={handleInputChange}
             />
-            <Button type="submit" variant="outline-primary">
+            <Button type="submit" variant="outline-primary" onClick={handleSearch}>
               Search
             </Button>
           </InputGroup>

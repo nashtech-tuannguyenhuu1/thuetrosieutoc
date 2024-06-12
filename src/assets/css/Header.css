@@ -39,7 +39,7 @@
   top: 30px;
   background-color: white;
   text-align: left;
-  z-index: 1;
+  z-index: 3;
 }
 
 .user-dropdown div {
@@ -59,4 +59,12 @@
 .app-header button {
   padding: 2px 3px;
   vertical-align: bottom;
+}
+
+.user-actions {
+  display: inline;
+}
+
+.guest-actions {
+  display: none;
 }

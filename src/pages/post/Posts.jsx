@@ -51,10 +51,10 @@ function Posts() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-check"></i> Approved
+              <i className="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -71,10 +71,10 @@ function Posts() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-times"></i> Rejected
+              <i className="pi pi-times"></i> Rejected
             </Col>
           </Row>
         </Col>
@@ -91,10 +91,10 @@ function Posts() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-spinner"></i> Processings
+              <i className="pi pi-spinner"></i> Processings
             </Col>
           </Row>
         </Col>
@@ -111,10 +111,10 @@ function Posts() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-check"></i> Approved
+              <i className="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -131,10 +131,10 @@ function Posts() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-check"></i> Approved
+              <i className="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>
@@ -151,10 +151,10 @@ function Posts() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-check"></i> Approved
+              <i className="pi pi-check"></i> Approved
             </Col>
           </Row>
         </Col>

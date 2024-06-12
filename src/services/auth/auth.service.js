@@ -10,7 +10,10 @@ class AuthService {
                 localStorage.setItem("user", JSON.stringify(response.data))
             }
             return response.data;
-        })
+        }).catch(error => {
+            console.error('Error during login:', error);
+            throw error;
+          });
     }
 
     logout() {
@@ -19,10 +22,18 @@ class AuthService {
 
     register(userName, phoneNumber, password) {
         return axios.post(API_URL + "users", {
+            "name": userName,
             "user_name": userName,
             "phone": phoneNumber,
-            "password": password
-        })
+            "password": password,
+            "role": "User"
+        }).then(response => {
+            console.log('Register successful:', response.data);
+            return response.data;
+        }).catch(error => {
+            console.error('Error during registration:', error);
+            throw error;
+        });
     }
 
     getCurrentUser() {

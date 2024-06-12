@@ -1,6 +1,5 @@
 import React from 'react';
 import {Col, Row} from 'react-bootstrap';
-import HotArea from '../../components/ui/page/HotArea';
 import HN from '../../assets//images/HN.jpg';
 import '../../assets/css/RoomList.css'
 import PaginationArea from '../../components/ui/page/PaginationArea';
@@ -14,7 +13,7 @@ function House() {
           <p>Top Affordable Rentals in Vietnam: Boarding Rooms, Houses, Apartments, and Commercial Spaces - Quickly updated, accurate, and verified rental information.</p>
         </Col>
       </Row>
-      <HotArea></HotArea>
+
       <Row className='row-area'>
         <Col xs={12}>
           <h4>Found 1000 Houses rental lists</h4>
@@ -32,10 +31,10 @@ function House() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i className="pi pi-phone"> 0986040618</i>
             </Col>
           </Row>
         </Col>
@@ -52,10 +51,10 @@ function House() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i className="pi pi-phone"> 0986040618</i>
             </Col>
           </Row>
         </Col>
@@ -72,10 +71,10 @@ function House() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i className="pi pi-phone"> 0986040618</i>
             </Col>
           </Row>
         </Col>
@@ -92,10 +91,10 @@ function House() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i className="pi pi-phone"> 0986040618</i>
             </Col>
           </Row>
         </Col>
@@ -112,10 +111,10 @@ function House() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i className="pi pi-phone"> 0986040618</i>
             </Col>
           </Row>
         </Col>
@@ -132,10 +131,10 @@ function House() {
           <p>Tiện nghi: truyền hình cáp, wifi, giường, tủ, ti vi, máy nước nóng, máy lạnh, wc trong phòng, thiết bị vệ sinh hoàn chỉnh</p>
           <Row>
             <Col md={6}>
-              <i class="pi pi-clock"> 3 giờ trước</i>
+              <i className="pi pi-clock"> 3 giờ trước</i>
             </Col>
             <Col md={6} style={{textAlign: 'right'}}>
-              <i class="pi pi-phone"> 0986040618</i>
+              <i className="pi pi-phone"> 0986040618</i>
             </Col>
           </Row>
         </Col>

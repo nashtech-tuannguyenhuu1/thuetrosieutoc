@@ -50,7 +50,7 @@ function Accounts() {
           <p>Số bài đăng: 12</p>
           <Row>
             <Col md={12} style={{textAlign: 'right'}}>
-              <i class="pi pi-sun pi-sun-inactive"></i> Inactive
+              <i className="pi pi-sun pi-sun-inactive"></i> Inactive
             </Col>
           </Row>
         </Col>
@@ -67,7 +67,7 @@ function Accounts() {
           <p>Số bài đăng: 12</p>
           <Row>
             <Col md={12} style={{textAlign: 'right'}}>
-              <i class="pi pi-sun"></i> Active
+              <i className="pi pi-sun"></i> Active
             </Col>
           </Row>
         </Col>
@@ -84,7 +84,7 @@ function Accounts() {
           <p>Số bài đăng: 12</p>
           <Row>
             <Col md={12} style={{textAlign: 'right'}}>
-              <i class="pi pi-sun"></i> Active
+              <i className="pi pi-sun"></i> Active
             </Col>
           </Row>
         </Col>
@@ -101,7 +101,7 @@ function Accounts() {
           <p>Số bài đăng: 12</p>
           <Row>
             <Col md={12} style={{textAlign: 'right'}}>
-              <i class="pi pi-sun"></i> Active
+              <i className="pi pi-sun"></i> Active
             </Col>
           </Row>
         </Col>
@@ -118,7 +118,7 @@ function Accounts() {
           <p>Số bài đăng: 12</p>
           <Row>
             <Col md={12} style={{textAlign: 'right'}}>
-              <i class="pi pi-sun"></i> Active
+              <i className="pi pi-sun"></i> Active
             </Col>
           </Row>
         </Col>
@@ -135,7 +135,7 @@ function Accounts() {
           <p>Số bài đăng: 12</p>
           <Row>
             <Col md={12} style={{textAlign: 'right'}}>
-              <i class="pi pi-sun"></i> Active
+              <i className="pi pi-sun"></i> Active
             </Col>
           </Row>
         </Col>

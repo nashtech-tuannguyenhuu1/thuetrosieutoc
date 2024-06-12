@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import {Button, Form} from 'react-bootstrap';
 import AuthService from "../../services/auth/auth.service"
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
 
 function LoginForm(props) {
 
@@ -56,10 +57,15 @@ function LoginForm(props) {
     AuthService.login(formData.phone, formData.password).then(
       (response) => {
         console.log('re:' + response)
-        props.handleSettingCurrentUser(response)
+        props.setCurrentUser(response)
+        // localStorage.setItem('jwtToken', response.data.token);
+        localStorage.setItem('jwtToken', '323233f333f.33f3f3wwdfdfdfdfd.3r3f3f');
+        toast.success('Logged in successfully')
         navigate('/');
-      }
-    )
+      }).catch((error) => {
+        console.error('Error during login:', error);
+        toast.error('Phone number and name are incorrect.')
+      });
   };
 
   return (
